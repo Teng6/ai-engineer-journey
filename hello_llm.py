@@ -1,13 +1,20 @@
-import os
 from dotenv import load_dotenv
 from google import genai
 
 load_dotenv()
-client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
-response = client.models.generate_content(
-    model="gemini-2.5-flash",
-    contents="what year is it today?",
+
+client = genai.Client()
+
+interaction = client.interactions.create(
+    model = "gemini-3.5-flash",
+    input = "Why is it so hard for CS students to get a job nowadays? is it because of AI surge or is it more of a technical skill issue?"
 )
 
-print(response.text)
-print(response.usage_metadata)
+u = interaction.usage
+
+print("Answer:", interaction.output_text)
+print()
+print(f"Input Tokens: {u.total_input_tokens}")
+print(f"Output Tokens: {u.total_output_tokens}")
+print(f"Thought Tokens: {u.total_thought_tokens}")
+print(f"Total Tokens: {u.total_tokens}")
