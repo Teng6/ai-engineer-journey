@@ -1,0 +1,346 @@
+[
+  {
+    "n": 1,
+    "status": "ok",
+    "result": {
+      "store": "Fresh Mart",
+      "date": "2026-03-14",
+      "items": [
+        {
+          "name": "Milk",
+          "qty": 2,
+          "price": 1.5
+        },
+        {
+          "name": "Bread",
+          "qty": 1,
+          "price": 2.25
+        }
+      ],
+      "total": 5.25
+    }
+  },
+  {
+    "n": 2,
+    "status": "ok",
+    "result": {
+      "store": "Mercury Drug - Balanga",
+      "date": "2026-03-14",
+      "items": [
+        {
+          "name": "Vitamin C",
+          "qty": 3,
+          "price": 2.0
+        },
+        {
+          "name": "Alcohol",
+          "qty": 1,
+          "price": 45.0
+        }
+      ],
+      "total": 51.0
+    }
+  },
+  {
+    "n": 3,
+    "status": "ok",
+    "result": {
+      "store": "TARGET",
+      "date": "2026-03-15",
+      "items": [
+        {
+          "name": "Shampoo",
+          "qty": 1,
+          "price": 6.99
+        },
+        {
+          "name": "Toothpaste",
+          "qty": 2,
+          "price": 3.49
+        }
+      ],
+      "total": 15.09
+    }
+  },
+  {
+    "n": 4,
+    "status": "ok",
+    "result": {
+      "store": "Jollibee",
+      "date": "2026-08-22",
+      "items": [
+        {
+          "name": "Chickenjoy",
+          "qty": 2,
+          "price": 99.0
+        },
+        {
+          "name": "Spaghetti",
+          "qty": 1,
+          "price": 65.0
+        }
+      ],
+      "total": 263.0
+    }
+  },
+  {
+    "n": 5,
+    "status": "ok",
+    "result": {
+      "store": "7-ELEVEN",
+      "date": "2026-04-02",
+      "items": [
+        {
+          "name": "Coffee",
+          "qty": 1,
+          "price": 1.99
+        },
+        {
+          "name": "Sandwich",
+          "qty": 1,
+          "price": 4.5
+        }
+      ],
+      "total": 6.49
+    }
+  },
+  {
+    "n": 6,
+    "status": "ok",
+    "result": {
+      "store": "Walmart",
+      "date": "2026-04-03",
+      "items": [
+        {
+          "name": "Banana",
+          "qty": 3,
+          "price": 0.25
+        },
+        {
+          "name": "Orange Juice",
+          "qty": 1,
+          "price": 3.99
+        }
+      ],
+      "total": 4.74
+    }
+  },
+  {
+    "n": 7,
+    "status": "ok",
+    "result": {
+      "store": "Dunkin'",
+      "date": "2026-05-09",
+      "items": [
+        {
+          "name": "Donut",
+          "qty": 6,
+          "price": 1.1
+        },
+        {
+          "name": "Latte",
+          "qty": 1,
+          "price": 3.75
+        }
+      ],
+      "total": 10.35
+    }
+  },
+  {
+    "n": 8,
+    "status": "ok",
+    "result": {
+      "store": "SM Supermarket",
+      "date": "2026-08-22",
+      "items": [
+        {
+          "name": "Eggs Tray",
+          "qty": 2,
+          "price": 210.0
+        }
+      ],
+      "total": 420.0
+    }
+  },
+  {
+    "n": 9,
+    "status": "ok",
+    "result": {
+      "store": "Cafe Lola",
+      "date": "2026-09-03",
+      "items": [
+        {
+          "name": "Latte",
+          "qty": 2,
+          "price": 120.0
+        },
+        {
+          "name": "Croissant",
+          "qty": 1,
+          "price": 95.0
+        }
+      ],
+      "total": 335.0
+    }
+  },
+  {
+    "n": 10,
+    "status": "ok",
+    "result": {
+      "store": "Ace Hardware",
+      "date": null,
+      "items": [
+        {
+          "name": "Hammer",
+          "qty": 1,
+          "price": 12.99
+        },
+        {
+          "name": "Nails",
+          "qty": 2,
+          "price": 3.5
+        }
+      ],
+      "total": 19.99
+    }
+  },
+  {
+    "n": 11,
+    "status": "ok",
+    "result": {
+      "store": "Pizza Hut",
+      "date": "2026-06-01",
+      "items": [
+        {
+          "name": "Pepperoni Pizza",
+          "qty": 1,
+          "price": 18.0
+        }
+      ],
+      "total": 18.0
+    }
+  },
+  {
+    "n": 12,
+    "status": "clean_fail",
+    "result": null,
+    "error": "No receipt found in the text"
+  },
+  {
+    "n": 13,
+    "status": "ok",
+    "result": {
+      "store": "Shell",
+      "date": "2026-07-01",
+      "items": [],
+      "total": 45.0
+    }
+  },
+  {
+    "n": 14,
+    "status": "ok",
+    "result": {
+      "store": "IKEA",
+      "date": "2026-07-19",
+      "items": [
+        {
+          "name": "Lamp",
+          "qty": 1,
+          "price": 24.99
+        },
+        {
+          "name": "Plant Pot",
+          "qty": 3,
+          "price": 5.0
+        }
+      ],
+      "total": 39.99
+    }
+  },
+  {
+    "n": 15,
+    "status": "ok",
+    "result": {
+      "store": "Costco Wholesale",
+      "date": "2026-11-02",
+      "items": [
+        {
+          "name": "Water 24pk",
+          "qty": 1,
+          "price": 4.99
+        },
+        {
+          "name": "Chips",
+          "qty": 2,
+          "price": 3.5
+        }
+      ],
+      "total": 11.99
+    }
+  },
+  {
+    "n": 16,
+    "status": "ok",
+    "result": {
+      "store": "Lazada",
+      "date": "2026-05-20",
+      "items": [
+        {
+          "name": "Phone Case",
+          "qty": 1,
+          "price": 299.0
+        },
+        {
+          "name": "USB Cable",
+          "qty": 2,
+          "price": 150.0
+        },
+        {
+          "name": "Shipping",
+          "qty": 1,
+          "price": 0.0
+        }
+      ],
+      "total": 599.0
+    }
+  },
+  {
+    "n": 17,
+    "status": "ok",
+    "result": {
+      "store": "Rustan's",
+      "date": "2026-10-10",
+      "items": [
+        {
+          "name": "Beef Tapa",
+          "qty": 1,
+          "price": 280.0
+        },
+        {
+          "name": "Rice",
+          "qty": 2,
+          "price": 35.0
+        }
+      ],
+      "total": 350.0
+    }
+  },
+  {
+    "n": 18,
+    "status": "clean_fail",
+    "result": null,
+    "error": "No receipt found in the text"
+  },
+  {
+    "n": 19,
+    "status": "clean_fail",
+    "result": null,
+    "error": "No receipt found in the text"
+  },
+  {
+    "n": 20,
+    "status": "clean_fail",
+    "result": null,
+    "error": "No receipt found in the text"
+  }
+]
