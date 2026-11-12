@@ -1,0 +1,362 @@
+[
+  {
+    "model": "gemini",
+    "category": "factual",
+    "input": "What is the capital of Australia, and why isn't it Sydney?",
+    "answer": "The capital of Australia is **Canberra**. \n\nIt is not Sydney (nor is it Melbourne, Australia's other massive metropolis) due to a historic rivalry between the country's two largest cities, and a compromise that led to the creation of a brand-new capital city from scratch.\n\nHere is the story behind why Sydney isn't the capital:\n\n### 1. The Great Rivalry\nDuring the 19th century, before Australia became a unified nation, the colonies of New South Wales (where Sydney is the capital) and Victoria (where Melbourne is the capital) were fierce rivals. Both cities were wealthy, powerful, and each believed it deserved to be the center of the new nation. \n\n### 2. The Constitutional Compromise\nWhen the six colonies finally agreed to federate and form the Commonwealth of Australia in 1901, the question of where to put the capital caused a major deadlock. Neither Sydney nor Melbourne would agree to let the other have the title. \n\nTo break the tie, Section 125 of the new Australian Constitution included a clever (and somewhat radical) compromise:\n*   The capital had to be located in the state of New South Wales.\n*   Crucially, it had to be located **at least 100 miles (approx. 160 km) away from Sydney**.\n*   Furthermore, until the new capital was built, the federal parliament would temporarily meet in Melbourne. (Melbourne served as the seat of government from 1901 until 1927).\n\n### 3. Choosing Canberra\nIn 1908, after inspecting several potential sites, the government selected an inland, rural area halfway between Sydney and Melbourne. The site was named **Canberra** (believed to be an Aboriginal word meaning \"meeting place\"). \n\nLand was carved out of New South Wales to create the Australian Capital Territory (ACT)—much like Washington, D.C., was created in the United States—to ensure the federal government didn't answer to any single state government. An international design competition was won by the American architect Walter Burley Griffin, who designed the planned city around a central artificial lake. \n\nSo, Sydney isn't the capital simply because Australia's founders decided that if they couldn't share Sydney, nobody could!",
+    "usage": {
+      "input": 16,
+      "output": 484,
+      "thinking": 0
+    },
+    "cost": 0.0012148
+  },
+  {
+    "model": "gemini",
+    "category": "factual",
+    "input": "Explain what an API is in two sentences.",
+    "answer": "An API, or Application Programming Interface, is a set of rules and protocols that allows different software applications to communicate with each other. It acts as a messenger that takes your request, tells a system what to do, and then returns the response back to you.",
+    "usage": {
+      "input": 10,
+      "output": 52,
+      "thinking": 0
+    },
+    "cost": 0.000133
+  },
+  {
+    "model": "gemini",
+    "category": "reasoning",
+    "input": "A bat and a ball cost $1.10 total. The bat costs $1.00 more than the ball. How much is the ball?",
+    "answer": "The ball costs **$0.05** (5 cents).\n\nHere is the breakdown:\n* The ball = $0.05\n* The bat = $1.05 ($1.00 more than the ball)\n* Total = $1.10",
+    "usage": {
+      "input": 33,
+      "output": 59,
+      "thinking": 0
+    },
+    "cost": 0.0001574
+  },
+  {
+    "model": "gemini",
+    "category": "reasoning",
+    "input": "If all roses are flowers and some flowers fade quickly, can we say all roses fade quickly? Explain.",
+    "answer": "**No**, we cannot say that all roses fade quickly. \n\nHere is the explanation based on logic:\n\n1. **\"All roses are flowers\"** means that the category of \"roses\" is completely inside the larger category of \"flowers.\"\n2. **\"Some flowers fade quickly\"** means that there is an overlap between \"flowers\" and things that \"fade quickly,\" but it does *not* mean that *all* flowers do. \n\nEven though roses are flowers, they belong to the specific group of flowers that **might** fade quickly or **might not** fade quickly. Because the premise only tells us that *some* flowers fade quickly, we don't have enough information to know whether roses are part of the group that fades quickly or part of the group that stays fresh longer. \n\nIn formal logic, concluding that all roses fade quickly from these statements is an error known as the **fallacy of the undistributed middle**. \n\n*Analogy:* All dogs are mammals, and some mammals can swim. That does not mean all dogs can swim (even though some can).",
+    "usage": {
+      "input": 22,
+      "output": 227,
+      "thinking": 0
+    },
+    "cost": 0.0005741
+  },
+  {
+    "model": "gemini",
+    "category": "summarize",
+    "input": "Summarize in one sentence: Large language models predict the next token based on the tokens before it. They are trained on huge text datasets and can be prompted to do many tasks without retraining.",
+    "answer": "Large language models are versatile AI systems trained on massive text datasets to predict subsequent tokens based on prior context, enabling them to perform numerous tasks without retraining.",
+    "usage": {
+      "input": 39,
+      "output": 30,
+      "thinking": 0
+    },
+    "cost": 8.67e-05
+  },
+  {
+    "model": "gemini",
+    "category": "summarize",
+    "input": "Summarize in one sentence: Embeddings turn text into lists of numbers so that similar meanings end up close together. This lets programs search by meaning instead of exact words.",
+    "answer": "Embeddings convert text into numerical vectors that group similar meanings together, enabling computers to search by conceptual similarity rather than exact keywords.",
+    "usage": {
+      "input": 35,
+      "output": 25,
+      "thinking": 0
+    },
+    "cost": 7.3e-05
+  },
+  {
+    "model": "gemini",
+    "category": "writing",
+    "input": "Write a 3-sentence email asking my teacher for a deadline extension.",
+    "answer": "Subject: Extension request for [Assignment Name] - [Your Name]\n\nDear [Teacher's Last Name],\n\nI am writing to respectfully request a short extension for [Assignment Name], as I have been dealing with some unexpected personal circumstances this week. Would it be possible to submit my work by [Proposed Date] instead of the original deadline? Thank you very much for your time, understanding, and consideration.\n\nBest regards,\n\n[Your Name]",
+    "usage": {
+      "input": 16,
+      "output": 92,
+      "thinking": 0
+    },
+    "cost": 0.00023480000000000002
+  },
+  {
+    "model": "gemini",
+    "category": "writing",
+    "input": "Write a short, catchy Instagram caption for a photo of a street food stall at night.",
+    "answer": "Neon lights, midnight bites. 🌙✨🍜 #StreetFood #NightVibes",
+    "usage": {
+      "input": 19,
+      "output": 18,
+      "thinking": 0
+    },
+    "cost": 5.0700000000000006e-05
+  },
+  {
+    "model": "gemini",
+    "category": "taglish",
+    "input": "Ipaliwanag mo in simple Taglish kung ano ang token sa AI, parang kausap mo lang ang friend mo.",
+    "answer": "Bro, para mas madaling maintindihan, isipin mo na ang **token** ay parang **building block** o **piraso ng salita** na ginagamit ng AI para makaintindi at makapagsalita. \n\nHindi kasi binabasa ng AI ang buong sentence nang isang bagsakan, at hindi rin naman perpektong \"bawat salita\" ang bilang niya.\n\nEto ang Tandaan Mo:\n*   **1 Token $\\neq$ 1 Word lagi.** Minsan, ang isang mahabang salita ay hinahati sa dalawa o tatlong tokens. \n*   Pero sa English, ang rule of thumb ay: **ang 1 token ay roughly mga 0.75 words**. O kaya, **ang 100 tokens ay mga 75 na salita**.\n\n**Quick Example:**\nKung sasabihin mo sa AI: *\"I love coding\"* \nMalamang 3 tokens lang 'yun (tig-iisang token bawat salita).\n\nPero kung medyo kakaiba o Tagalog ang salita, pwedeng mahati ito. Halimbawa, ang salitang **\"Nagmamahal\"** ay pwedeng hatiin ng AI sa mga maliliit na piraso tulad ng: `Nag` + `mafa` + `hal` (mga 3 tokens na 'yun).\n\n**Bakit importante malaman 'to?**\nKasi kapag gumagamit ka ng AI (tulad ng ChatGPT), may **token limit** sila. Ibig sabihin, may hangganan kung gaano kalaki ang kaya nilang basahin o i-generate sa isang igo lang. Kapag sumobra ka, putol o kailangan mong mag-new chat. \n\nGets? Parang LEGO bricks lang ang tokens—pinagdugtong-dugtong para makabuo ng buong ideya!",
+    "usage": {
+      "input": 28,
+      "output": 409,
+      "thinking": 0
+    },
+    "cost": 0.0010309000000000002
+  },
+  {
+    "model": "gemini",
+    "category": "code",
+    "input": "Write a Python function that returns the two numbers in a list that add up to a target. Return their indexes.",
+    "answer": "Here is the Python function to solve this problem. \n\nTo make it efficient, we use a hash map (dictionary) to keep track of the numbers we've seen and their indices as we iterate through the list. This gives the solution a **$O(n)$ time complexity**.\n\n```python\ndef two_sum(nums: list[int], target: int) -> list[int]:\n    seen = {}  # Dictionary to store {number: index}\n\n    for i, num in enumerate(nums):\n        complement = target - num\n\n        # Check if the complement already exists in our dictionary\n        if complement in seen:\n            return [seen[complement], i]\n\n        # Otherwise, add the current number and its index to the dictionary\n        seen[num] = i\n\n    raise ValueError(\"No two sum solution\")\n\n\n# --- Example Usage ---\nnumbers = [2, 7, 11, 15]\ntarget_val = 9\n\nprint(two_sum(numbers, target_val))  # Output: [0, 1]\n```\n\n### How it works:\n1. We iterate through the list using `enumerate()` to get both the index (`i`) and the value (`num`).\n2. For each number, we calculate its **complement** (i.e., `target - num`).\n3. We check if this complement is already in our `seen` dictionary.\n   * If it is, it means we've previously seen the number needed to reach the target, so we return its index along with our current index (`i`).\n   * If it's not, we add the current number and its index to the `seen` dictionary and move to the next number.",
+    "usage": {
+      "input": 24,
+      "output": 370,
+      "thinking": 0
+    },
+    "cost": 0.0009322
+  },
+  {
+    "model": "gemma",
+    "category": "factual",
+    "input": "What is the capital of Australia, and why isn't it Sydney?",
+    "answer": "The capital of Australia is **Canberra**.\n\nThe reason it isn't Sydney (or Melbourne) is due to a long-standing rivalry between those two cities. Here is the breakdown of why Canberra was chosen:\n\n### 1. The Intercolonial Rivalry\nDuring the late 19th century, as the Australian colonies were moving toward federation (uniting to become one nation), there was intense competition between the two largest and most influential cities: **Sydney** (the capital of New South Wales) and **Melbourne** (the capital of Victoria). \n\nBoth cities wanted to be the seat of the new federal government. Neither side was willing to let the other have the prestige and economic advantage of being the national capital.\n\n### 2. The Compromise\nTo resolve this deadlock and prevent the federation from failing, a compromise was reached during the drafting of the Australian Constitution. It was decided that:\n*   The capital would be located in its own separate territory (the **Australian Capital Territory**).\n*   The capital had to be situated within the state of New South Wales (to satisfy Sydney), but it had to be at least **100 miles (160 km) away from Sydney** (to satisfy Melbourne and ensure Sydney didn't have too much influence).\n\n### 3. The Selection of Canberra\nAfter the compromise was made, several sites were surveyed. Canberra was chosen because it was located between the two rival cities and offered a reliable water supply and a climate that was considered suitable for a capital.\n\nOnce the site was selected, an international design competition was held to plan the city. It was won by American architects **Walter Burley Griffin and Marion Mahony Griffin**, who designed Canberra as a \"garden city\" with geometric patterns and significant green spaces.\n\n### Summary\nIn short, Canberra is a **\"planned city.\"** It exists specifically because Sydney and Melbourne couldn't agree on which one of them should be the capital, so a neutral ground was created to keep the peace.",
+    "usage": {
+      "input": 16,
+      "output": 415,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "factual",
+    "input": "Explain what an API is in two sentences.",
+    "answer": "An API, or Application Programming Interface, acts as a bridge that allows two different software applications to communicate and share data with each other. It functions like a messenger that takes a request from one system, delivers it to another, and then returns the response back to the original requester.",
+    "usage": {
+      "input": 10,
+      "output": 56,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "reasoning",
+    "input": "A bat and a ball cost $1.10 total. The bat costs $1.00 more than the ball. How much is the ball?",
+    "answer": "The ball costs **$0.05** (5 cents).\n\n**Here is the breakdown:**\nIf the ball costs $0.05 and the bat costs $1.00 more, the bat must cost $1.05.\n$1.05 (bat) + $0.05 (ball) = $1.10 total.",
+    "usage": {
+      "input": 33,
+      "output": 78,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "reasoning",
+    "input": "If all roses are flowers and some flowers fade quickly, can we say all roses fade quickly? Explain.",
+    "answer": "The answer is **no**. Based on the logic provided, you cannot conclude that all roses fade quickly.\n\nHere is the breakdown of why this logic fails:\n\n### 1. The Logical Structure\nTo see why the conclusion is invalid, let’s look at the categories (sets) being used:\n*   **Set A:** Roses\n*   **Set B:** Flowers\n*   **Set C:** Things that fade quickly\n\nThe premises state:\n1.  All **A** (Roses) are part of **B** (Flowers).\n2.  Some **B** (Flowers) are part of **C** (Things that fade quickly).\n\n### 2. The Fallacy (The \"Undistributed Middle\")\nThe error lies in the relationship between \"Roses\" and \"Things that fade quickly.\" \n\nWhile we know that all roses are flowers, we only know that a *portion* of the flower category fades quickly. The logic does not specify **which** flowers fade quickly. \n\nThere are two possibilities within these premises:\n*   **Possibility 1:** The flowers that fade quickly are roses.\n*   **Possibility 2:** The flowers that fade quickly are something else entirely (like tulips or daisies), leaving roses untouched.\n\nBecause Possibility 2 is a valid interpretation of your premises, you cannot definitively claim that all roses fade quickly.\n\n### 3. A Visual Example (The Euler Diagram Method)\nImagine three circles:\n*   Draw a large circle and label it **Flowers**.\n*   Draw a smaller circle entirely *inside* the Flower circle and label it **Roses**.\n*   Now, draw a third circle labeled **Fading Quickly** that overlaps with part of the **Flower** circle.\n\nWhen you draw that third circle, you have a choice: you can draw it overlapping with the Rose circle, or you can draw it in a part of the Flower circle that is far away from the Rose circle. Since the premises don't tell you where to draw it, you cannot make a certain claim about the relationship between Roses and Fading.\n\n### 4. Comparison with a Clearer Example\nIf you apply the same logical structure to a different topic, the error becomes obvious:\n*   *All humans are mammals.*\n*   *Some mammals are whales.*\n*   *Therefore, all humans are whales.*\n\nAs you can see, even though the first two statements are true, the conclusion is clearly false. The logic follows the exact same flawed pattern.",
+    "usage": {
+      "input": 22,
+      "output": 526,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "summarize",
+    "input": "Summarize in one sentence: Large language models predict the next token based on the tokens before it. They are trained on huge text datasets and can be prompted to do many tasks without retraining.",
+    "answer": "Large language models are trained on massive datasets to predict subsequent tokens, allowing them to perform diverse tasks through prompting without further training.",
+    "usage": {
+      "input": 39,
+      "output": 25,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "summarize",
+    "input": "Summarize in one sentence: Embeddings turn text into lists of numbers so that similar meanings end up close together. This lets programs search by meaning instead of exact words.",
+    "answer": "Embeddings convert text into numerical vectors where proximity represents semantic similarity, enabling searches based on meaning rather than keyword matching.",
+    "usage": {
+      "input": 35,
+      "output": 23,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "writing",
+    "input": "Write a 3-sentence email asking my teacher for a deadline extension.",
+    "answer": "Subject: Extension Request: [Assignment Name] - [Your Name]\n\nDear [Teacher's Name],\n\nI am writing to respectfully ask for an extension on the [Assignment Name] originally due on [Date]. Due to some unexpected personal circumstances, I am finding it difficult to complete the work to my usual standard by the current deadline. Would it be possible to submit my assignment by [New Date] instead?\n\nBest regards,\n\n[Your Name]",
+    "usage": {
+      "input": 16,
+      "output": 93,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "writing",
+    "input": "Write a short, catchy Instagram caption for a photo of a street food stall at night.",
+    "answer": "Here are a few options, depending on the \"vibe\" of your photo:\n\n**Short & Punchy**\n*   Midnight cravings. 🌙\n*   Street lights and street bites. 🍢\n*   Neon lights & night bites. ✨\n*   Found my happy place. 📍\n\n**A Little Witty/Punny**\n*   Late night, great bites. 🥡\n*   Good food, good mood, good night.\n*   Street food > Fine dining. 🥢\n*   Powered by street food and neon lights. ⚡️\n\n**Atmospheric & Aesthetic**\n*   City lights and savory bites. 🌃\n*   Nothing beats the magic of a night market. 🏮\n*   Chasing flavors under the stars. ✨\n*   The city tastes better at night. 🌆\n\n**Best Hashtags:**\n#streetfood #nightmarket #foodie #nightvibes #streeteats #citylights #foodphotography",
+    "usage": {
+      "input": 19,
+      "output": 206,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "taglish",
+    "input": "Ipaliwanag mo in simple Taglish kung ano ang token sa AI, parang kausap mo lang ang friend mo.",
+    "answer": "Uy, bes! Gets ko, medyo nakakalito talaga 'yang term na \"token\" sa AI. Para mas madali, isipin mo na lang na ang AI ay parang isang bata na nagbabasa ng libro.\n\nGanito kasi 'yun:\n\n**1. Hindi \"words\" ang binabasa ng AI, kundi \"chunks\"**\nKapag tayo, nagbabasa, words agad ang nakikita natin. Pero ang AI, hindi niya agad gets ang buong salita. Hinihiwa-hiwa niya ang text sa maliliit na piraso. 'Yung bawat piraso na 'yan, ang tawag ay **token**.\n\n**2. Parang LEGO pieces**\nIsipin mo ang isang sentence ay parang isang structure na gawa sa LEGO. Ang bawat block o piece ng LEGO, 'yun ang **token**.\n*   Minsan, ang isang maikling salita (tulad ng *\"apple\"*) ay **isang token** lang.\n*   Pero kapag mahaba o complex ang salita (tulad ng *\"unbelievable\"*), pwedeng hatiin 'yan ng AI sa dalawa o tatlong tokens (halimbawa: *\"un\"*, *\"believe\"*, *\"able\"*).\n*   Kahit 'yung mga spaces at punctuation (tuldok, kuwit), token din 'yun!\n\n**3. Bakit ito importante? (The \"Budget\" aspect)**\nDito nagkakatalo. 'Yung mga AI tools (tulad ng ChatGPT), may \"limit\" sila sa tokens. Parang may **limitasyon ang budget** mo sa isang kainan.\n*   **Input tokens:** Ito 'yung mga tinype mo o 'yung prompt mo.\n*   **Output tokens:** Ito naman 'yung sagot ng AI sa'yo.\n\nKapag sinabing \"context window,\" isipin mo na lang na iyon 'yung \"memory\" ng AI. Kapag sobrang dami na ng tokens (sobrang haba na ng usapan), parang napuno na 'yung utak niya at baka makalimutan na niya 'yung mga sinabi mo sa simula.\n\n**In short:**\nAng **token** ay ang \"currency\" o ang basic unit ng impormasyon na ginagamit ng AI para maintindihan at makabuo ng text. Parang syllables or fragments ng salita.\n\nGets ba, friend? O kailangan natin ng mas maraming examples? Haha!",
+    "usage": {
+      "input": 28,
+      "output": 541,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "gemma",
+    "category": "code",
+    "input": "Write a Python function that returns the two numbers in a list that add up to a target. Return their indexes.",
+    "answer": "The most efficient way to solve this problem is to use a **hash map** (a Python dictionary). This allows you to find the complement of the current number in constant time, resulting in a linear time complexity.\n\nHere is the implementation:\n\n```python\ndef two_sum(nums, target):\n    \"\"\"\n    Finds the indices of two numbers in 'nums' that add up to 'target'.\n    \n    Args:\n        nums (list[int]): A list of integers.\n        target (int): The sum we are looking for.\n        \n    Returns:\n        list[int]: A list containing the two indices, or an empty list if no solution exists.\n    \"\"\"\n    # This dictionary will store: {value: index}\n    hash_map = {}\n\n    for index, num in enumerate(nums):\n        # Calculate what number we need to reach the target\n        complement = target - num\n\n        # If the complement is already in our dictionary, we found the pair\n        if complement in hash_map:\n            return [hash_map[complement], index]\n\n        # Otherwise, add the current number and its index to the dictionary\n        hash_map[num] = index\n\n    # Return an empty list if no pair is found\n    return []\n\n# --- Test Cases ---\nprint(two_sum([2, 7, 11, 15], 9))   # Output: [0, 1] (because 2 + 7 = 9)\nprint(two_sum([3, 2, 4], 6))        # Output: [1, 2] (because 2 + 4 = 6)\nprint(two_sum([3, 3], 6))           # Output: [0, 1]\nprint(two_sum([1, 2, 3], 10))       # Output: [] (no solution)\n```\n\n### How it works:\n1.  **The Dictionary (`hash_map`)**: We use this to keep track of every number we have seen so far and its corresponding index.\n2.  **The Loop**: We iterate through the list once using `enumerate` to get both the current index and the value.\n3.  **The Logic**: For every number (`num`), we calculate the `complement` (what we need to add to `num` to reach `target`).\n    *   If the `complement` is already in our dictionary, it means we have already passed the number that completes the pair. We immediately return the index of that stored number and our current index.\n    *   If it is not in the dictionary, we store the current number in the dictionary and move to the next.\n\n### Complexity Analysis:\n*   **Time Complexity: $O(n)$**\n    We only traverse the list containing $n$ elements exactly once. Each lookup in the dictionary takes $O(1)$ on average.\n*   **Space Complexity: $O(n)$**\n    In the worst case (where the pair is at the very end or doesn't exist), we will store $n$ elements in the dictionary.",
+    "usage": {
+      "input": 24,
+      "output": 681,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "factual",
+    "input": "What is the capital of Australia, and why isn't it Sydney?",
+    "answer": "The capital of Australia is **Canberra**, not Sydney.\n\nSydney is the largest and most famous city, but it wasn’t chosen as the capital for several important reasons:\n\n- When Australia federated in 1901, the new nation needed a central seat for government. The choice involved a compromise between Sydney and Melbourne, the two largest cities.\n- In 1908, an electoral contest was held among representatives from each state to decide the location. The winning candidate was **Dean Potter** (or similar), who proposed a site on the Australian Plain—about 280 km west of Sydney and 150 km south of Melbourne.\n- Construction of Canberra began in 1913, and the city was officially opened in 1927. Its purpose was to be a neutral ground, balancing the influence of the two major cities and ensuring the federal government wouldn’t be tied to one urban center.\n\nSo while Sydney holds cultural and economic prominence, Canberra serves as the constitutional capital where the Parliament of Australia meets.",
+    "usage": {
+      "input": 24,
+      "output": 513,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "factual",
+    "input": "Explain what an API is in two sentences.",
+    "answer": "An API (Application Programming Interface) is a set of rules and tools that lets different software applications communicate by defining specific functions or data formats through accessible endpoints. By exposing these interfaces, APIs enable developers to reuse functionality—such as payment processing or weather data—without having to build the underlying systems from scratch.",
+    "usage": {
+      "input": 19,
+      "output": 311,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "reasoning",
+    "input": "A bat and a ball cost $1.10 total. The bat costs $1.00 more than the ball. How much is the ball?",
+    "answer": "Let the price of the ball be \\(x\\) dollars. Then the bat costs \\(x + 1.00\\) dollars. The total cost is\n\n\\[\nx + (x + 1.00) = 2x + 1.00 = 1.10.\n\\]\n\nSolving for \\(x\\):\n\n\\[\n2x + 1.00 = 1.10 \\implies 2x = 0.10 \\implies x = 0.05.\n\\]\n\nSo the ball costs \\$0.05.\n\n\\[\n\\boxed{0.05}\n\\]",
+    "usage": {
+      "input": 40,
+      "output": 405,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "reasoning",
+    "input": "If all roses are flowers and some flowers fade quickly, can we say all roses fade quickly? Explain.",
+    "answer": "**Short answer:**  \nNo. From “all roses are flowers” and “some flowers fade quickly” we **cannot** infer that *all* roses fade quickly.\n\n---\n\n### Why the inference fails\n\n| Premise | What it tells us |\n|---------|-----------------|\n| **All roses are flowers.**  ( \\( \\text{Rose} \\subseteq \\text{Flowers}\\) ) | Every rose belongs to the group of flowers. |\n| **Some flowers fade quickly.** ( \\(\\exists\\) a flower \\(f\\) such that \\(f\\) fades quickly ) | At least one flower in the whole flower‑group has the quick‑fading property. |\n\nThe second premise only guarantees the **existence** of *one* flower that fades quickly. It says nothing about whether *other* flowers—including roses—also fade quickly.  \n\nTo go from “some B are C” to “all A are C” (where \\(A\\subseteq B\\)) we would need a much stronger claim, namely that **every** member of \\(A\\) is among those that satisfy C. The information we have does not provide that.\n\n---\n\n### Counterexample\n\nImagine the following sets:\n\n- **Flowers**: \\(\\{ \\text{rose},\\ \\text{daisy},\\ \\text{lily}\\}\\)\n- **Quick‑fading flowers**: \\(\\{ \\text{daisy} \\}\\)\n\nHere:\n- “All roses are flowers.” ✔︎ (the rose is indeed a flower.)\n- “Some flowers fade quickly.” ✔︎ (daisy fades quickly).\n\nBut **not all roses fade quickly** – the rose itself does **not** appear in the list of quick‑fading flowers. Hence the conclusion “all roses fade quickly” is false in this situation.\n\n---\n\n### Logical form\n\nIn categorical logic:\n\n1. \\(R \\subseteq F\\) (“All roses are flowers”)  \n2. \\(\\exists x\\,(F(x) \\land Q(x))\\) (“Some flower \\(x\\) fades quickly”)  \n\nFrom these we cannot derive \\(R \\subseteq Q\\) (“All roses fade quickly”).  \nThe fallacy is akin to assuming that because a part of a larger set shares a property with some element of that set, the entire smaller set must share it.\n\n---\n\n**Conclusion:** Knowing that *some* flower fades quickly does not give us any information about the fate of roses specifically. Therefore we cannot validly assert that *all* roses fade quickly.",
+    "usage": {
+      "input": 31,
+      "output": 1393,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "summarize",
+    "input": "Summarize in one sentence: Large language models predict the next token based on the tokens before it. They are trained on huge text datasets and can be prompted to do many tasks without retraining.",
+    "answer": "Large language models predict the next token by using the preceding tokens as input—they learn from massive text datasets and can handle many different prompts for various tasks without needing additional retraining.",
+    "usage": {
+      "input": 50,
+      "output": 173,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "summarize",
+    "input": "Summarize in one sentence: Embeddings turn text into lists of numbers so that similar meanings end up close together. This lets programs search by meaning instead of exact words.",
+    "answer": "Embeddings map text into numeric vectors where semantically similar concepts are placed nearby, so programs can search by meaning rather than exact words.",
+    "usage": {
+      "input": 45,
+      "output": 198,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "writing",
+    "input": "Write a 3-sentence email asking my teacher for a deadline extension.",
+    "answer": "Dear Professor [Last Name], I am writing to respectfully request a brief extension for my assignment that is currently due on [original date] because an unexpected family emergency has prevented me from completing it on time. I understand how important these deadlines are and would greatly appreciate the possibility of extending the due date to [new date] if your schedule allows. Thank you for considering my request and please let me know if any additional information is needed to support this change.",
+    "usage": {
+      "input": 25,
+      "output": 1032,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "writing",
+    "input": "Write a short, catchy Instagram caption for a photo of a street food stall at night.",
+    "answer": "Night’s sweetest bite awaits you! 🌙🍜✨ #StreetFood #LateNightCravings",
+    "usage": {
+      "input": 29,
+      "output": 555,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "taglish",
+    "input": "Ipaliwanag mo in simple Taglish kung ano ang token sa AI, parang kausap mo lang ang friend mo.",
+    "answer": "Halo! 😊 Parang nagkita ako, sobrito. \n\n**Token** sa AI ay ang *mga basahin na halaga ng text* na ginagamit ng modelo para maiprintahan ang sagot. Hindi lang isang salitang suotlang—kaya’t ang mga bigat ng text ay pinaihil sa mga small chunk o sub-words. \n\nHalimbawa: Kapag nagsusulong ko ng *\"How are you?\"*, ito ay binubuo ng 3 token: **\"How\"**, **\"are\"**, at **\"you\"** (o kaya ay may iba pang pagbubuo dahil sa spacing). Dahil sa AI, ito ang \"unit\" na ginagamit para maiprintahan ang response.\n\nKaya’t mas maliliit ang token sa English kaysa sa Japanese o Chinese, pero ang konsepto ay pareho: **smallest unit of text that the model processes.** \n\nKung gusto ka ng more detail, tayo magtayo! 👍",
+    "usage": {
+      "input": 37,
+      "output": 567,
+      "thinking": 0
+    },
+    "cost": 0.0
+  },
+  {
+    "model": "liquid",
+    "category": "code",
+    "input": "Write a Python function that returns the two numbers in a list that add up to a target. Return their indexes.",
+    "answer": "Here’s a concise O(n) solution using a dictionary (hash‑map) to remember the numbers we’ve already seen while scanning the list once.\n\n```python\ndef two_sum_indices(nums: list[int], target: int) -> list[int]:\n    \"\"\"\n    Return the indices of the two distinct elements in `nums` whose values sum to `target`.\n\n    Parameters:\n    - nums: list of integers\n    - target: integer value to achieve with a pair from `nums`\n\n    Returns:\n        A list containing the two indices [i, j] such that nums[i] + nums[j] == target.\n        If no such pair exists, returns an empty list.\n    \"\"\"\n    seen = {}                     # maps number -> its latest index\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in seen:\n            # Found the partner; return the earlier index (from `seen`) and current index\n            return [seen[complement], i]\n        seen[num] = i             # store the current index for future look‑ups\n    return []                     # no pair adds up to target\n\n\n# ----------------------------------------------------------------------\n# Example usage\nif __name__ == \"__main__\":\n    print(two_sum_indices([2, 7, 11, 15], 9))   # → [0, 1]  (2 + 7)\n    print(two_sum_indices([3, 2, 4], 6))       # → [1, 2]  (2 + 4)\n    print(two_sum_indices([3, 3], 6))          # → [0, 1]  (3 + 3)\n```\n\n**Explanation**\n\n- We iterate over `nums` with `enumerate`, giving both the element (`num`) and its index (`i`).\n- For each element we compute its *complement* (`target - num`).  \n  If this complement has been seen before (i.e., it’s already a key in `seen`), then the earlier index stored for that complement and the current index `i` form the required pair.\n- Otherwise we record the current number and its index in `seen` and continue.\n- The algorithm runs in linear time **O(n)** and uses extra space **O(n)** for the dictionary.\n\nFeel free to adapt the return type (e.g., return a tuple instead of a list) if your use‑case differs.",
+    "usage": {
+      "input": 33,
+      "output": 1160,
+      "thinking": 0
+    },
+    "cost": 0.0
+  }
+]

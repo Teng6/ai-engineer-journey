@@ -16,6 +16,7 @@ def save_history():
         json.dump(history, f, indent=2, ensure_ascii=False)
 
 
+
 def main():
     
     model_name = MODELS[0]
@@ -62,6 +63,12 @@ def main():
         total_cost += cost
         print(f"Chatbot({usage['input']}): {interaction.output_text}")
         
+        print("------MD------")
+        print(f"input: [{user_input}]")
+        print(f"reply: [{interaction.output_text}]")
+        print(f"total input: {total_input:>6} | total output: {total_output:>6}")
+        print()
+        
         history.append({
             "user": user_input,
             "model": model_name,
@@ -71,9 +78,10 @@ def main():
             "cost": f"{cost:.6f}",
         })
         save_history()
-    
+    print("---END-------")
     print(f"{'in':>6} {'out':>6} {'think':>6} {'cost($)':>10}")
     print(f"{total_input:>6} {total_output:>6} {total_thought:>6} {total_cost:>10.6f}")
+
 if __name__ == "__main__":
     main()
         
