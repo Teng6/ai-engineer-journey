@@ -45,3 +45,74 @@ def ask_openrouter(model_name, messages):
     
     return reply, usage, None
 
+
+PROVIDERS = {
+    "gemini": {
+        "ask": ask_gemini,
+        "models": ["gemini-3.5-flash", "gemini-2.5-flash", "gemini-3.5-flash-lite"],
+    },
+    "openrouter": {
+        "ask": ask_openrouter,
+        "models": ["liquid/lfm-3-1.7b:free", "openrouter/free"],
+    },
+}
+
+def pick_provider():
+    provider_names = list(PROVIDERS)
+
+    print("Pick a provider: (NUMBER ONLY)")
+    for i, name in enumerate(provider_names, 1):
+        print(f"{i}. {name}")
+    
+    choice = input("You: ").strip()
+
+    if choice.isdigit() and 1 <= int(choice) <= len(provider_names):
+        return provider_names[int(choice) - 1]
+    else:
+        print(f"Invalid choice")
+        return None
+
+def pick_model(provider):
+    model_names = list(PROVIDERS[provider]['models'])
+
+    print("Pick a model: (NUMBER ONLY)")
+    for i, name in enumerate(model_names, 1):
+        print(f" {i}. {name}")
+
+    choice = input("You: ").strip()
+
+    if choice.isdigit() and 1 <= int(choice) <= len(model_names):
+        return model_names[int(choice) - 1]
+    else: 
+        print(f"In valid choice")
+        return None
+
+
+def main():
+    
+    provider = "gemini"
+    model_name = "gemini-3.5-flash"
+    
+    while True:
+        
+        user_input = input("You: ")
+        
+        if user_input.strip() == "/models":
+            new_provider = pick_provider()
+            if new_provider == None:
+                continue
+            
+            new_model = pick_model(new_provider):
+            if new_model == None:
+                continue
+            
+            provider = new_provider
+            model_name = new_model
+            print(f"Switched to {provider}/{model_name}")
+            continue
+        
+        if user_input.strip().lower() == "/quit":
+            break
+        
+        if provider == "gemini"
+            
