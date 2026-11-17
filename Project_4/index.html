@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic Search</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; }
+    input { width: 70%; padding: 8px; }
+    button { padding: 8px 12px; }
+    .result { border: 1px solid #ccc; padding: 10px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Semantic Search</h1>
+  <input id="box" placeholder="Search...">
+  <button id="btn">Search</button>
+  <div id="results"></div>
+
+  <script>
+    const box = document.getElementById("box");
+    const btn = document.getElementById("btn");
+    const results = document.getElementById("results");
+
+    btn.addEventListener("click", async () => {
+      results.innerHTML = "Loading...";
+      const res = await fetch("/search?q=" + encodeURIComponent(box.value));
+      const data = await res.json();
+
+      results.innerHTML = "";
+      for (const item of data.results) {
+        results.innerHTML += `<div class="result">${item.doc} (${item.score.toFixed(3)})</div>`;
+      }
+    });
+  </script>
+</body>
+</html>
