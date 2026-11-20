@@ -1,0 +1,16 @@
+VECTOR DATABASE NOTES
+
+WHAT IS A VECTOR DATABASE
+A vector database stores embeddings. An embedding is a list of numbers that shows the meaning of a text. The database can find the texts whose meaning is closest to a question.
+
+WHY NOT A NORMAL DATABASE
+A normal database finds exact matches. A search for "puppy" will not find "dog". A vector database finds close meaning, so it can match them.
+
+EXACT VS APPROXIMATE SEARCH
+Exact search compares the query to every vector. It is correct but slow for big data. Approximate search uses an index to skip most vectors. It is much faster and almost as correct.
+
+METADATA
+Metadata is extra info saved with each vector, like the file name, the section, or a tag. You can use it to filter results. For example, search only in one file.
+
+CHANGING THE EMBEDDING MODEL
+Vectors from different models cannot be compared. If you change the model, you must embed everything again.
