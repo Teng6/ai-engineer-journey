@@ -2,66 +2,65 @@ from dotenv import load_dotenv
 from pypdf import PdfReader
 import os
 
+
 def split_text(text, size=1000, overlap=150):
-    if overlap >= size:
-        raise ValueError("Overlap must be smaller than the size")
-    
-    pieces = []
+    chunks = []
     start = 0
+    step = size - overlap 
+    
     while start < len(text):
-        pieces.append(text[start:start + size])
+        chunks.append(text[start:start + size])
         if start + size >= len(text):
             break
-        start += size - overlap
-    return pieces
-
-def split_sections(text):
-    sections = []
-    heading = "(no heading)"
-    current = ""
-    in_code = False
-    
-    for line in text.split("\n"):
-        if line.startswith("```"):
-            in_code = not in_code
-        if line.startswith("#") and not in_code:
-            if current:
-                sections.append((heading, current))
-            heading = line.lstrip("#").strip()
-            current = ""
-        else:
-            current += line + "\n"
-    sections.append((heading, current))
-    return sections
-
-def chunk_markdown(path):
-    with open(path, "r", encoding="utf-8") as f:
-        texts = f.read()
-    sections = split_sections(texts)
-    file_name = os.path.basename(path)
-    chunks = []
-    
-    n = 0
-    
-    for title, text in sections:
-        if text.strip() == "":
-            continue
-        if len(text) <= 1000:
-            pieces = [text]
-        else:
-            pieces = split_text(text)
-        
-        for piece in pieces:
-            chunks.append({
-                "id": file_name + "-" + str(n),
-                "text": piece,
-                "file": file_name,
-                "location": title,
-            })
-            n += 1
-    
+        start += step
+     
     return chunks
 
+def chunk_markdown(path):
+    chunks = []
+    heading = "(no heading)"
+    file_name = os.path.basename(path)
+    text = ""
+    in_code = False
+
+    with open(path, "r", encoding="utf-8") as f:
+        texts = f.read()
+    
+    ## chunking part
+    for line in texts.splitlines():
+        if line.startswith("```"):
+            in_code = not in_code
+        if line.startswith('#') and not in_code:
+            if text:
+                chunks.append((heading, text))
+                
+            heading = line.lstrip('#').strip()
+            text = ""
+        else:
+            text += line + "\n"
+    if text:
+        chunks.append((heading, text))
+    
+    ## check if its longer than 1000
+    final_chunk = []
+    counter = 0
+    for heading, text in chunks:
+        if len(text) > 1000:
+            pieces = split_text(text)
+        else:
+            pieces = [text]
+        
+        ## inside this loop, we make the dict now.
+        for piece in pieces:
+            final_chunk.append({
+                "id": file_name + "-" + str(counter),
+                "text": piece,
+                "file": file_name,
+                "location": heading,
+            })
+            counter += 1
+    return final_chunk
+    
 def find_page(position, page_starts):
     page = 0
     for start in page_starts:
@@ -70,11 +69,39 @@ def find_page(position, page_starts):
     return page
 
 def chunk_pdf(path):
-    file_name = os.path.basename()
     full_text, page_starts = read_pdf(path)
-    pieces = split_text(full_text)
+    texts = split_text(full_text)
+    chunks = []
     
+    position = 0
+    counter = 1
     
+    for text in texts:
+        start = position
+        end = position + len(text)
+
+        p_start = 1
+        p_end = 1
+        
+        if start >= page_starts[counter]:
+            p_start += 1
+        
+        if end > page_starts[counter]:
+            p_end += 1
+            
+        chunks.append(((p_start, p_end), text))
+        position += len(text)
+        
+        if counter < len(page_starts) - 1 and start <= page_starts[counter]:
+            counter += 1
+        
+    
+    return chunks
+
+            
+            
+            
+
 def read_pdf(path):
     reader = PdfReader(path)
     full_text = ""
