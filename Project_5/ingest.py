@@ -28,12 +28,12 @@ def load_file(path):
             return f.read()
 
 def split_sections(text):
-    sections = []
+    title = "" 
     current = ""
-    title = ""
+    sections = []
     for line in text.split("\n"):
         if line.startswith("#"):
-            if current:     #bago na ulit
+            if current:
                 sections.append((title, current))
             title = line
             current = ""
@@ -41,7 +41,6 @@ def split_sections(text):
             current += line + "\n"
     sections.append((title, current))
     return sections
-    
 
 sections = []
 for file in os.listdir("Project_5/docs"):
