@@ -69,46 +69,39 @@ def find_page(position, page_starts):
     return page
 
 def chunk_pdf(path):
-    full_text, page_starts = read_pdf(path)
     chunks = []
+    full_text, page_starts = read_pdf(path)
     file_name = os.path.basename(path)
-    
     texts = split_text(full_text)
+    step = 850
     
     for i, text in enumerate(texts):
-        start = i * 850
-        end = start + len(text) - 1 
-        p_start = find_page(start, page_starts)
-        p_end = find_page(end, page_starts)
+        start = i * step
+        end = start + len(text) - 1
+        start_page = find_page(start, page_starts)
+        end_page = find_page(end, page_starts)
 
-        if p_start == p_end:
-            location = f"{p_start}"
+        if start_page == end_page:
+            location = f"{start_page}"
         else:
-            location = f"{p_start} - {p_end}"
+            location = f"{start_page} - {end_page}"
         
         chunks.append({
-            "id": file_name + "-" + str(i),
+            "id": f"{file_name}-{i}",
             "text": text,
             "file": file_name,
             "location": location,
         })
         
-    return chunks
-
+        return chunks
+      
 def read_pdf(path):
     reader = PdfReader(path)
     full_text = ""
     page_starts = []
-    
+
     for page in reader.pages:
         page_starts.append(len(full_text))
         full_text += page.extract_text() + "\n"
-        
+    
     return full_text, page_starts
-
-
-
-page_starts = [0, 900, 1800]
-position = 500
-
-print(find_page(position, page_starts))
